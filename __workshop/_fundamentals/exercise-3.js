@@ -19,7 +19,7 @@ const people = [
 
 function fullName(peopleArr) {
   return peopleArr.map(person => {
-    if (typeof(person.name.middle) !== 'undefined') {
+    if (Object.keys(person.name).includes('middle')) {
       return person.name.first + ' ' + person.name.middle + ' ' + person.name.last;
     } else {
       return person.name.first + ' ' + person.name.last;
