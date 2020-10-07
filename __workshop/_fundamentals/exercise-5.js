@@ -86,7 +86,22 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+  newArray = [];
+  arr.forEach(staffMember => {
+    if (Object.keys(staffMember).includes(key)) {
+      if (staffMember[key] === val) {
+        newArray.push(staffMember);
+      }
+    }
+
+    if (Object.keys(staffMember.skillLevels).includes(key)) {
+      if (staffMember.skillLevels[key] >= val) {
+        newArray.push(staffMember);
+      }
+    }
+  })
+
+  return newArray;
 };
 
 // 2. Do a console.log to verify your function.
