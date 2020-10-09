@@ -3,12 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet"/>    <link href="style.css" rel="stylesheet" />
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form class="signup-form">
+        <div class="text-input">
+          <label for="fullname" class="text-label">Full name</label>
+          <input type="text" id="fullname" class="text-field" name="fullname" autocomplete="on" required>
+        </div>
+        <div class="text-input">
+          <label for="address" class="text-label">Street Addess</label>
+          <input type="text" id="address" class="text-field" name="address" autocomplete="on" required>
+        </div>
+        <div class="text-input">
+          <label for="email" class="text-label">Email Address</label>
+          <input type="email" id="email" class="text-field" name="email" autocomplete="on" required>
+        </div>
+        <div class="text-input">
+          <label for="phone" class="text-label">Phone number</label>
+          <input type="text" id="phone" class="text-field" name="phone" autocomplete="on" required>
+        </div>
+        <div class="text-input">
+          <label for="password1" class="text-label">Password</label>
+          <input type="password" id="password1" class="text-field" name="password1" required>
+        </div>
+        <div class="text-input">
+          <label for="password2" class="text-label">Confirm Password</label>
+          <input type="password" id="password2" class="text-field" name="password2" required>
+        </div>
+        <div class="agree-box">
+          <input type="checkbox" id="agree" class="agree-checkbox" name="agree">
+          <label for="agree">I agree to the <a href="#">terms of service</a>.</label>
+        </div>
+        <div class="message"></div>
+        <div class="form-buttons">
+          <div><input type="reset" class="reset-btn" value="Clear"></div>
+          <div></div><input type="submit" class="submit-btn" value="Submit"></div>
+        </div>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

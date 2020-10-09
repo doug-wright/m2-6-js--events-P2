@@ -1,1 +1,98 @@
-/* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.wrapper {
+    position: relative;
+    top: 32px;
+    max-width: 475px;
+    padding: 24px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.text-input {
+    padding: 5px;
+    text-align: right;
+}
+
+.text-field {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline-color: hsl(256deg, 100%, 44%);
+    width: 250px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.text-field-error {
+    border: 4px solid red;
+}
+
+.agree-box {
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    border-radius: 7px;
+    background-color: #f2f2f2;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+}
+
+.agree-checkbox {
+    outline-color: hsl(256deg, 100%, 44%);
+}
+
+.reset-btn {
+    padding: 10px 50px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(333deg, 100%, 44%);
+}
+
+.submit-btn {
+    padding: 10px 50px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(256deg, 100%, 44%)
+}
